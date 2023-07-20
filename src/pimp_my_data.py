@@ -30,7 +30,7 @@ class PimpMyData:
 
     def __init__(self):
         
-        data_file_path = PimpMyData._get_file_path
+        data_file_path = PimpMyData._get_file_path()
         
         if not os.path.isfile(data_file_path):
             raise FileNotFoundError(f"File '{data_file_path}' not found. Please check the file path.")
